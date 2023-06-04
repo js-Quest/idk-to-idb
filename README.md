@@ -4,6 +4,8 @@
 
   ## Description
   An online/offline text editor that meets PWA criteria, using the idb npm package.
+  <img width="1416" alt="Screenshot 2023-06-04 at 1 40 15 PM" src="https://github.com/js-Quest/idk-to-idb/assets/128349503/d2435213-7578-4850-8c36-e41fb44a335a">
+
 
   ## Table of Contents
   - [Installation](#installation)
