@@ -37,7 +37,7 @@ export const putDb = async (content) => {
 };
 // Export a function we will use to GET to the database.
 export const getDb = async () => {
-  try {
+  // try {
     console.log("GET from the database");
 
     // Create a connection to the database database and version we want to use.
@@ -56,9 +56,9 @@ export const getDb = async () => {
     const result = await request;
     console.log("result.value", result);
     return result?.value;
-  } catch (error) {
-    console.error("getDb not implemented", error);
-  }
+  // } catch (error) {
+  //   console.error("getDb not implemented", error);
+  // }
 };
 
 initdb();
