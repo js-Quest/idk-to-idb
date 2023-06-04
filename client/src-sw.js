@@ -30,12 +30,15 @@ registerRoute(({ request }) => request.mode === "navigate", pageCache);
 //set up asset cache
 registerRoute(
   ({ request }) => ["style", "script", "worker"].includes(request.destination),
-  new offlineFallback({
-    cacheName: "page-cache",
+  new CacheFirst({
+    cacheName: "asset-cache",
     plugins: [
       new CacheableResponsePlugin({
         statuses: [0, 200],
       }),
+      new ExpirationPlugin({
+        maxAgeSeconds: 30*24*60*60,
+      }),
     ],
-  })
+  }),
 );

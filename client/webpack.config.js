@@ -35,9 +35,11 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: "Contact Cards",
-        short_name: "Contact",
-        description: "Never forget your contacts!",
+        name: "JATE-an-editor",
+        short_name: "JATE",
+        description: "just another text editor",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
         start_url: "./",
         publicPath: "./",
         icons: [
